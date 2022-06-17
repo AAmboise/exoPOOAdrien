@@ -11,6 +11,7 @@ $newVille = new Ville();
 echo $newVille->nomVille('Nantes');
 echo $newVille->departement('Loire Atlantique');
 echo '</br>';
+$newVille = new Ville();
 echo $newVille->nomVille('Lyon');
 echo $newVille->departement('Rhône');
 ?>
