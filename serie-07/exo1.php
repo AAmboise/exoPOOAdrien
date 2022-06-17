@@ -1,17 +1,13 @@
 <?php
-class Ville {
-    public function nomVille($ville=''){
-        return 'La ville de '.$ville.' ' ;
-    }
-    public function departement($dep=''){
-        return 'est dans le département : '.$dep.' ' ;
-    }
-}
+require_once('class.ville.php');
+
 $newVille = new Ville();
-echo $newVille->nomVille('Nantes');
-echo $newVille->departement('Loire Atlantique');
+$newVille->nom = 'Nantes';
+$newVille->departement = 'Loire atlantique';
+echo $newVille->afficher();
 echo '</br>';
 $newVille = new Ville();
-echo $newVille->nomVille('Lyon');
-echo $newVille->departement('Rhône');
+$newVille->nom = 'Lyon';
+$newVille->departement = 'Rhône';
+echo $newVille->afficher();
 ?>

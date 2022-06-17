@@ -9,14 +9,9 @@ class Ville {
     public function afficher():String{
         return "La ville $this->nom est dans le département : $this->departement";
     }
+    public function __toString(){ // surcharge de la methode toString héritée de Objet
+        return "$this->nom : $this->departement";
+    }
 }
-$newVille = new Ville();
-$newVille->nom = 'Nantes';
-$newVille->departement = 'Loire atlantique';
-echo $newVille->afficher();
-echo '</br>';
-$newVille = new Ville();
-$newVille->nom = 'Lyon';
-$newVille->departement = 'Rhône';
-echo $newVille->afficher();
+
 ?>
